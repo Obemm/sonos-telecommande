@@ -1,6 +1,6 @@
 # US-03 — Dépôt autonome, sorti de ProjetMaison
 
-Statut : À valider · Créé le 2026-11-09 · Terminé le —
+Statut : Terminé · Créé le 2026-11-09 · Terminé le 2026-11-10
 
 ## Histoire
 En tant que propriétaire, je veux la télécommande dans son propre dépôt Git, avec son suivi, afin de la
@@ -26,7 +26,7 @@ faire vivre comme un projet autonome, à part de mon assistant personnel (Projet
       `.claude/launch.json` (serveur réel et mode démo).
 - [x] Premier commit, création du dépôt privé sur GitHub, push.
 - [x] ProjetMaison : outil, stories et lancements retirés ; EPIC-12 « Déplacé » avec renvoi ; ADR-008 ; `check.py`.
-      Commité là-bas le 2026-11-09 (094ada6), pas encore poussé.
+      Commité là-bas le 2026-11-09 (094ada6), poussé le même soir.
 - [x] Données personnelles retirées : textes reformulés (« le propriétaire », « l'utilisateur », « sur place »),
       US-02 renommée, adresse e-mail GitHub masquée dans la configuration Git du dépôt, règle et leçon écrites ;
       historique réécrit en un seul commit, puis push forcé.
@@ -40,10 +40,12 @@ faire vivre comme un projet autonome, à part de mon assistant personnel (Projet
 | 4 | Dépôt sur GitHub | `gh repo view` : privé ; le commit distant est le commit local | OK : PRIVATE, branche `main`, distant = local, 22 fichiers (2026-11-09) |
 | 5 | ProjetMaison après retrait | avant : `diff -rq` entre l'outil et ce dépôt ; après : `python backlog/check.py` et recherche de « sonos » | OK : seuls les 4 fichiers adaptés différaient, aucun fichier absent d'ici ; « Backlog cohérent : 12 épics, 30 stories » ; « sonos » ne reste que dans le renvoi (BOARD, EPIC-12, ADR-008, `session-context.md`) |
 | 6 | Aucune donnée personnelle | recherche dans tous les fichiers suivis (lien de parenté, prénom, ancienne adresse e-mail, marque de chaudière, nom de la box) ; identité Git du dépôt ; contrôle bloquant sur tout le contenu du commit réécrit ; tests | OK : 0 ligne trouvée ; adresse e-mail GitHub masquée ; contrôle bloquant OK ; 29 tests (2026-11-09) |
+| 7 | Ce que sert GitHub après le push forcé | clone neuf du dépôt et API GitHub : commits, fichiers, recherche des mêmes données, e-mail affiché, visibilité | OK : 1 commit (3b6fa51), 22 fichiers, 0 ligne trouvée, adresse e-mail masquée, PRIVATE (2026-11-10) |
 
 ## Validation du propriétaire
-Date : — · Verdict : — · Remarques : —
+Date : 2026-11-10 · Verdict : validée (« Oui, valide US-03 ») · Remarques : —
 
 ## Rétro éclair
-- Ce qui a surpris :
-- Ce qu'on retient (→ `lecons.md` si durable) :
+- Ce qui a surpris : le contrôle bloquant a d'abord bloqué sur son propre motif, et il ne voit ni les prénoms
+  ni les liens de parenté ; les retirer après coup a demandé une réécriture de l'historique et un push forcé.
+- Ce qu'on retient : un dépôt autonome est anonyme dès le premier push (→ `lecons.md`, 2026-11-09).

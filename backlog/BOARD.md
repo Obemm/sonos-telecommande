@@ -1,6 +1,6 @@
 # Tableau de bord — télécommande Sonos
 
-Mis à jour : 2026-11-09 (dépôt autonome sans donnée personnelle, sorti de ProjetMaison : US-03 à valider ;
+Mis à jour : 2026-11-10 (US-03 terminée et validée : dépôt autonome sans donnée personnelle, sorti de ProjetMaison ;
 US-02 en cours, installation sur place en attente ; le 08 : US-01 prototype terminé et validé, design refait).
 
 ## Objectif
@@ -26,9 +26,7 @@ téléphone pour ses 5 pièces. On saura que c'est atteint quand il l'utilise au
 | [US-02](stories/US-02-installer-telecommande-sur-place.md) | Télécommande sur le téléphone Android de l'utilisateur (Termux) : paquet prêt et testé sur le PC, installation sur place à faire |
 
 ### À valider (par le propriétaire)
-| Story | Titre |
-|---|---|
-| [US-03](stories/US-03-depot-autonome.md) | Dépôt autonome, sorti de ProjetMaison (GitHub privé, sans donnée personnelle) |
+_(aucune)_
 
 ### À faire
 _(aucune)_
@@ -36,6 +34,7 @@ _(aucune)_
 ### Terminé
 | Story | Titre | Date |
 |---|---|---|
+| [US-03](stories/US-03-depot-autonome.md) | Dépôt autonome, sorti de ProjetMaison (GitHub privé, sans donnée personnelle) | 2026-11-10 |
 | [US-01](stories/US-01-prototype-telecommande-sonos.md) | Prototype de télécommande web, design refait (lecture, muet, volume essayés ; favori et regroupement → US-02) | 2026-11-08 |
 
 ## Prochaines étapes
