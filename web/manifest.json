@@ -1,0 +1,11 @@
+{
+  "name": "Musique de la maison",
+  "short_name": "Musique",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1d1a17",
+  "theme_color": "#1d1a17",
+  "icons": [
+    { "src": "icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

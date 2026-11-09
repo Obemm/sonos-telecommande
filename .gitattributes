@@ -1,0 +1,3 @@
+* text=auto
+# Lu par bash sous Android (Termux) : jamais de fins de ligne Windows.
+*.sh text eol=lf
